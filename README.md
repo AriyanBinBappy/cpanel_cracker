@@ -1,24 +1,34 @@
-# 🔐 cPanel Pentesting Toolkit
+# 🛠️ cPanel Pentesting Toolkit
 
 **Author:** Ariyan Bin Bappy  
 **Group:** Octo Dark Cyber Squad  
 **Type:** Ethical Hacking Toolkit  
-**Use:** Security research, brute-force testing, wordlist generation  
-⚠️ **For authorized testing and educational use only.**
+**Purpose:** For authorized penetration testing and educational cybersecurity research.
 
 ---
 
-## 📦 Included Tools
+## 📦 Toolkit Overview
 
-### 1. 🔓 `cpanel_cracker.py`
+This repo includes two powerful tools for cPanel penetration testing:
 
-Multi-threaded brute-force tool for testing `cPanel` login portals (`:2082`, `:2083`).
+| Tool                  | Description                                                    |
+|-----------------------|----------------------------------------------------------------|
+| `cpanel_cracker.py`   | Multi-threaded cPanel brute force script with proxy support    |
+| `password_generator.py` | Username/password/combo wordlist generator                    |
 
-- Supports combo lists or separate username/password files
-- Proxy rotation support
-- Stops at first successful login
-- Clean output (success/fail per attempt)
+⚠️ **Strictly for authorized and legal testing**. Use responsibly.
 
-**Usage:**
-```bash
-python3 tools/cpanel_cracker.py
+---
+
+## 🔓 Tool #1: `odcs_cpanel.py`
+
+Cracks into cPanel login panels running on port `2082` or `2083`.
+
+### 🔑 Features
+- Multi-threaded brute-force
+- Accepts combo files or separate user/pass lists
+- Optional proxy support (HTTP/SOCKS)
+- Stops on first success and shows full result
+- Clean real-time logging with status
+
+
